@@ -31,7 +31,7 @@ export class SuitsTourApplication extends BootMixin(
     this.configure(RestExplorerBindings.COMPONENT).to({
       path: '/explorer',
     });
-    // this.component(RestExplorerComponent); https://github.com/ajit-shikalgar/suits-tour.git
+    // this.component(RestExplorerComponent);
 
     this.component(AuthenticationComponent);
     this.component(JWTAuthenticationComponent);

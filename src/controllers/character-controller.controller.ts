@@ -1,3 +1,4 @@
+import {authenticate} from '@loopback/authentication';
 import {
   Count,
   CountSchema,
@@ -63,6 +64,7 @@ export class CharacterControllerController {
   }
 
   @get('/characters')
+  @authenticate('jwt')
   @response(200, {
     description: 'Array of Character model instances',
     content: {

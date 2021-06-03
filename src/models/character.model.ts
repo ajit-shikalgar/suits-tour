@@ -10,6 +10,9 @@ export class Character extends Entity {
     type: 'number',
     id: true,
     generated: true,
+    postresql: {
+      columnName: 'id'
+    }
   })
   id?: number;
 
